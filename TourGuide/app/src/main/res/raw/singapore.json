@@ -16,6 +16,14 @@
         {
           "title": "Money",
           "description": "The Singapore dollca (S$/SGD)is the official currentcy of Singapore. Coins come in denominatinos of 5/10/20/50 cents and S$1."
+        },
+        {
+          "title": "Health & Emergencies",
+          "description": "Dial 999 for police and 995 for fire or ambulance\nCall 1777 if you need an ambulance in non-emergency situations."
+        },
+        {
+          "title": "Money",
+          "description": "The Singapore dollca (S$/SGD)is the official currentcy of Singapore. Coins come in denominatinos of 5/10/20/50 cents and S$1."
         }
       ]
     },
@@ -25,6 +33,54 @@
       "image": "ic_cat_food",
       "description": "Singapore has an impressive global dining scene. Today, there's everything on offer from Brazillian steaks to modern British cuisine.",
       "items": [
+        {
+          "title": "Song Fa Bak Kut Teh",
+          "description": "Crowds line up at this cozy eatery known for its bak kut teh (pork ribs in broth) & braised meats.",
+          "image": "ic_songfa",
+          "address": "11 New Bridge Road, #01-01, Singapore 059383",
+          "tel": "+65 6533 6128",
+          "website": "http://www.songfa.com.sg"
+        },
+        {
+          "title": "Bar Bar Black Sheep",
+          "description": "Offer wide range of food (Indian, Thai & Western) with very affordable price.",
+          "image": "ic_blacksheep",
+          "address": "86 Robertson Quay #01-04, Singapore 238245",
+          "tel": "+65 6836 9255",
+          "website": "http://www.bbbs.com.sg"
+        },
+        {
+          "title": "Song Fa Bak Kut Teh",
+          "description": "Crowds line up at this cozy eatery known for its bak kut teh (pork ribs in broth) & braised meats.",
+          "image": "ic_songfa",
+          "address": "11 New Bridge Road, #01-01, Singapore 059383",
+          "tel": "+65 6533 6128",
+          "website": "http://www.songfa.com.sg"
+        },
+        {
+          "title": "Bar Bar Black Sheep",
+          "description": "Offer wide range of food (Indian, Thai & Western) with very affordable price.",
+          "image": "ic_blacksheep",
+          "address": "86 Robertson Quay #01-04, Singapore 238245",
+          "tel": "+65 6836 9255",
+          "website": "http://www.bbbs.com.sg"
+        },
+        {
+          "title": "Song Fa Bak Kut Teh",
+          "description": "Crowds line up at this cozy eatery known for its bak kut teh (pork ribs in broth) & braised meats.",
+          "image": "ic_songfa",
+          "address": "11 New Bridge Road, #01-01, Singapore 059383",
+          "tel": "+65 6533 6128",
+          "website": "http://www.songfa.com.sg"
+        },
+        {
+          "title": "Bar Bar Black Sheep",
+          "description": "Offer wide range of food (Indian, Thai & Western) with very affordable price.",
+          "image": "ic_blacksheep",
+          "address": "86 Robertson Quay #01-04, Singapore 238245",
+          "tel": "+65 6836 9255",
+          "website": "http://www.bbbs.com.sg"
+        },
         {
           "title": "Song Fa Bak Kut Teh",
           "description": "Crowds line up at this cozy eatery known for its bak kut teh (pork ribs in broth) & braised meats.",
@@ -64,6 +120,54 @@
           "address": "18 Marina Gardens Dr, Singapore 018953",
           "tel": "+65 6420 6848",
           "website": "http://www.gardensbythebay.com.sg"
+        },
+        {
+          "title": "Universal Studios Singapore",
+          "description": "Movie amusement park with sets & rides on themes from Hollywood to sci-fi, plus live entertainment.",
+          "image": "ic_universal_studios_sinapore",
+          "address": "8 Sentosa Gateway, Singapore 098269",
+          "tel": "+65 6577 8888",
+          "website": ""
+        },
+        {
+          "title": "Gardens by the Bay",
+          "description": "A network of modern green houses & waterfront parks containing super trees lined with solar cells.",
+          "image": "ic_gardens_by_the_bay",
+          "address": "18 Marina Gardens Dr, Singapore 018953",
+          "tel": "+65 6420 6848",
+          "website": "http://www.gardensbythebay.com.sg"
+        },
+        {
+          "title": "Universal Studios Singapore",
+          "description": "Movie amusement park with sets & rides on themes from Hollywood to sci-fi, plus live entertainment.",
+          "image": "ic_universal_studios_sinapore",
+          "address": "8 Sentosa Gateway, Singapore 098269",
+          "tel": "+65 6577 8888",
+          "website": ""
+        },
+        {
+          "title": "Gardens by the Bay",
+          "description": "A network of modern green houses & waterfront parks containing super trees lined with solar cells.",
+          "image": "ic_gardens_by_the_bay",
+          "address": "18 Marina Gardens Dr, Singapore 018953",
+          "tel": "+65 6420 6848",
+          "website": "http://www.gardensbythebay.com.sg"
+        },
+        {
+          "title": "Universal Studios Singapore",
+          "description": "Movie amusement park with sets & rides on themes from Hollywood to sci-fi, plus live entertainment.",
+          "image": "ic_universal_studios_sinapore",
+          "address": "8 Sentosa Gateway, Singapore 098269",
+          "tel": "+65 6577 8888",
+          "website": ""
+        },
+        {
+          "title": "Gardens by the Bay",
+          "description": "A network of modern green houses & waterfront parks containing super trees lined with solar cells.",
+          "image": "ic_gardens_by_the_bay",
+          "address": "18 Marina Gardens Dr, Singapore 018953",
+          "tel": "+65 6420 6848",
+          "website": "http://www.gardensbythebay.com.sg"
         }
       ]
     },
@@ -73,6 +177,30 @@
       "image": "ic_cat_gettingaround",
       "description": "Singapore has a Mass Rapid Transit (MRT) and Light Rail Transit (LRT) rail system consisting of five lines. There is also a system of bus routes throughout the island, most of which have air conditioning units installed due to Singapore's tropical climate.",
       "items": [
+        {
+          "title": "On Arrival",
+          "description": "The quickest way to the city center from Changi Airport (SIN) about 18 kilometers, is by taxi. A more economical option is to take the subway train, known as the MRT (mass rapid transport), which has numerous stations throughout the city."
+        },
+        {
+          "title": "Taxi service",
+          "description": "Taxis are relatively cheap and widely available, but harder to find during rush hour or when it's raining. Fares follow a strict meter system and taxi drivers can't charge extra. Basic fare starts at S$3-S$3.9, with increments of S$0.22 per 400 meters.\nDuring business hours in the city center, taxis are not allowed to pick up passengers on the street."
+        },
+        {
+          "title": "On Arrival",
+          "description": "The quickest way to the city center from Changi Airport (SIN) about 18 kilometers, is by taxi. A more economical option is to take the subway train, known as the MRT (mass rapid transport), which has numerous stations throughout the city."
+        },
+        {
+          "title": "Taxi service",
+          "description": "Taxis are relatively cheap and widely available, but harder to find during rush hour or when it's raining. Fares follow a strict meter system and taxi drivers can't charge extra. Basic fare starts at S$3-S$3.9, with increments of S$0.22 per 400 meters.\nDuring business hours in the city center, taxis are not allowed to pick up passengers on the street."
+        },
+        {
+          "title": "On Arrival",
+          "description": "The quickest way to the city center from Changi Airport (SIN) about 18 kilometers, is by taxi. A more economical option is to take the subway train, known as the MRT (mass rapid transport), which has numerous stations throughout the city."
+        },
+        {
+          "title": "Taxi service",
+          "description": "Taxis are relatively cheap and widely available, but harder to find during rush hour or when it's raining. Fares follow a strict meter system and taxi drivers can't charge extra. Basic fare starts at S$3-S$3.9, with increments of S$0.22 per 400 meters.\nDuring business hours in the city center, taxis are not allowed to pick up passengers on the street."
+        },
         {
           "title": "On Arrival",
           "description": "The quickest way to the city center from Changi Airport (SIN) about 18 kilometers, is by taxi. A more economical option is to take the subway train, known as the MRT (mass rapid transport), which has numerous stations throughout the city."
