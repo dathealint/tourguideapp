@@ -18,10 +18,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:maxHeight="@dimen/row_image_height"
-            android:cropToPadding="false"
+            android:cropToPadding="true"
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
-            android:background="@color/colorPrimaryDark"
             android:src="@drawable/ic_blacksheep"/>
 
         <LinearLayout
