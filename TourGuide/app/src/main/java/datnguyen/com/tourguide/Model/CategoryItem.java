@@ -1,15 +1,16 @@
 package datnguyen.com.tourguide.Model;
 
+import java.io.Serializable;
+
 /**
  * Created by datnguyen on 12/21/16.
  */
 
-public class CategoryItem extends BaseModel {
+public class CategoryItem extends BaseModel implements Serializable {
 
 	private String address;
 	private String tel;
 	private String website;
-	private String imageName;
 
 	public String getAddress() {
 		return address;
@@ -35,11 +36,4 @@ public class CategoryItem extends BaseModel {
 		this.website = website;
 	}
 
-	public String getImageName() {
-		return imageName;
-	}
-
-	public void setImageName(String image) {
-		this.imageName = image;
-	}
 }

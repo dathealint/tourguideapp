@@ -7,4 +7,5 @@ package datnguyen.com.tourguide;
 public class GettingAroundFragment extends BaseFragment {
 	public GettingAroundFragment() {
 	}
+
 }

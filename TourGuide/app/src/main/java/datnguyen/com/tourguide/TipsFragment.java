@@ -9,5 +9,4 @@ public class TipsFragment extends BaseFragment {
 	public TipsFragment() {
 	}
 
-
 }

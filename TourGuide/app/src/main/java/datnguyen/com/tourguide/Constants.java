@@ -25,4 +25,6 @@ public class Constants {
 	public static final String JSON_ITEM_ID_LOCATION = "location";
 	public static final String JSON_ITEM_ID_GETTINGAROUND = "gettingaround";
 
+	public static final int DURATION_FADE_TOP_IMAGE = 200;
+
 }

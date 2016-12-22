@@ -1,16 +1,17 @@
 {
   "title": "Singapore",
   "description": "a centre hub of Asia",
-  "image": "imagename.jpg",
+  "image": "",
   "categories": [
     {
       "id": "tips",
       "title": "Tips & Need to know",
-      "description": "Singapore has an impressive global dining scene. Today, there's everything on offer from Brazillian steaks to modern British cuisine.",
+      "image": "ic_cat_tips",
+      "description": "Some information you should know before visiting Singapore",
       "items": [
         {
           "title": "Health & Emergencies",
-          "description": "Dial 999 for police and 995 for fire or ambulance\\nCall 1777 if you need an ambulance in non-emergency situations."
+          "description": "Dial 999 for police and 995 for fire or ambulance\nCall 1777 if you need an ambulance in non-emergency situations."
         },
         {
           "title": "Money",
@@ -21,12 +22,13 @@
     {
       "id": "food",
       "title": "Food & Drink",
+      "image": "ic_cat_food",
       "description": "Singapore has an impressive global dining scene. Today, there's everything on offer from Brazillian steaks to modern British cuisine.",
       "items": [
         {
           "title": "Song Fa Bak Kut Teh",
           "description": "Crowds line up at this cozy eatery known for its bak kut teh (pork ribs in broth) & braised meats.",
-          "image": "songfa.jpg",
+          "image": "ic_songfa",
           "address": "11 New Bridge Road, #01-01, Singapore 059383",
           "tel": "+65 6533 6128",
           "website": "http://www.songfa.com.sg"
@@ -34,7 +36,7 @@
         {
           "title": "Bar Bar Black Sheep",
           "description": "Offer wide range of food (Indian, Thai & Western) with very affordable price.",
-          "image": "blacksheep.jpg",
+          "image": "ic_blacksheep",
           "address": "86 Robertson Quay #01-04, Singapore 238245",
           "tel": "+65 6836 9255",
           "website": "http://www.bbbs.com.sg"
@@ -44,12 +46,13 @@
     {
       "id": "location",
       "title": "Favorite Spots",
-      "description": "Singapore has an impressive global dining scene. Today, there's everything on offer from Brazillian steaks to modern British cuisine.",
+      "image": "ic_cat_location",
+      "description": "Singapore is one of the cleanest and safest cities in the world. The city is so disciplined and orderly that even the trees that lined the main roads are planted every twenty feet apart. The favourite past times of the local people are shopping and dining at all hours. The island is so well-lighted and busy with shoppers and diners after dark, it is very safe to walk in the streets at night.",
       "items": [
         {
           "title": "Universal Studios Singapore",
           "description": "Movie amusement park with sets & rides on themes from Hollywood to sci-fi, plus live entertainment.",
-          "image": "universal_studios_sinapore.jpg",
+          "image": "ic_universal_studios_sinapore",
           "address": "8 Sentosa Gateway, Singapore 098269",
           "tel": "+65 6577 8888",
           "website": ""
@@ -57,7 +60,7 @@
         {
           "title": "Gardens by the Bay",
           "description": "A network of modern green houses & waterfront parks containing super trees lined with solar cells.",
-          "image": "gardens_by_the_bay.jpg",
+          "image": "ic_gardens_by_the_bay",
           "address": "18 Marina Gardens Dr, Singapore 018953",
           "tel": "+65 6420 6848",
           "website": "http://www.gardensbythebay.com.sg"
@@ -67,7 +70,8 @@
     {
       "id": "gettingaround",
       "title": "Getting around",
-      "description": "Singapore has an impressive global dining scene. Today, there's everything on offer from Brazillian steaks to modern British cuisine.",
+      "image": "ic_cat_gettingaround",
+      "description": "Singapore has a Mass Rapid Transit (MRT) and Light Rail Transit (LRT) rail system consisting of five lines. There is also a system of bus routes throughout the island, most of which have air conditioning units installed due to Singapore's tropical climate.",
       "items": [
         {
           "title": "On Arrival",
@@ -75,7 +79,7 @@
         },
         {
           "title": "Taxi service",
-          "description": "Taxis are relatively cheap and widely available, but harder to find during rush hour or when it's raining. Fares follow a strict meter system and taxi drivers can't charge extra. Basic fare starts at S$3-S$3.9, with increments of S$0.22 per 400 meters.\\nDuring business hours in the city center, taxis are not allowed to pick up passengers on the street."
+          "description": "Taxis are relatively cheap and widely available, but harder to find during rush hour or when it's raining. Fares follow a strict meter system and taxi drivers can't charge extra. Basic fare starts at S$3-S$3.9, with increments of S$0.22 per 400 meters.\nDuring business hours in the city center, taxis are not allowed to pick up passengers on the street."
         }
       ]
     }

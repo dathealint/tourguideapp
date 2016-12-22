@@ -38,19 +38,19 @@ public class CustomPagerAdapter extends FragmentPagerAdapter {
 	public BaseFragment getItem(int position) {
 		Category category = this.categories.get(position);
 		if (category.getId().equals(JSON_ITEM_ID_TIPS)) {
-			TipsFragment fragment = (TipsFragment) TipsFragment.createInstance(position, TipsFragment.class.getName());
+			TipsFragment fragment = (TipsFragment) TipsFragment.createInstance(position, category, TipsFragment.class.getName());
 			return fragment;
 		} else if (category.getId().equals(JSON_ITEM_ID_FOOD)) {
-			FoodFragment fragment = (FoodFragment) FoodFragment.createInstance(position, FoodFragment.class.getName());
+			FoodFragment fragment = (FoodFragment) FoodFragment.createInstance(position, category, FoodFragment.class.getName());
 			return fragment;
 		} else if (category.getId().equals(JSON_ITEM_ID_LOCATION)) {
-			LocationFragment fragment = (LocationFragment) LocationFragment.createInstance(position, LocationFragment.class.getName());
+			LocationFragment fragment = (LocationFragment) LocationFragment.createInstance(position, category, LocationFragment.class.getName());
 			return fragment;
 		} else if (category.getId().equals(JSON_ITEM_ID_GETTINGAROUND)) {
-			GettingAroundFragment fragment = (GettingAroundFragment) GettingAroundFragment.createInstance(position, GettingAroundFragment.class.getName());
+			GettingAroundFragment fragment = (GettingAroundFragment) GettingAroundFragment.createInstance(position, category, GettingAroundFragment.class.getName());
 			return fragment;
 		} else {
-			return BaseFragment.createInstance(position, BaseFragment.class.getName());
+			return null;
 		}
 	}
 

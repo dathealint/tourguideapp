@@ -1,13 +1,14 @@
 package datnguyen.com.tourguide;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
+import android.graphics.drawable.TransitionDrawable;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentTabHost;
-import android.support.v4.view.PagerTabStrip;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
+import android.text.TextUtils;
+import android.util.Log;
+import android.widget.ImageView;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -21,6 +22,7 @@ import datnguyen.com.tourguide.Model.Category;
 import datnguyen.com.tourguide.Model.CategoryItem;
 import datnguyen.com.tourguide.Model.City;
 
+import static datnguyen.com.tourguide.Constants.DURATION_FADE_TOP_IMAGE;
 import static datnguyen.com.tourguide.Constants.FILE_JSON;
 import static datnguyen.com.tourguide.Constants.JSON_CATEGORIES_KEY;
 import static datnguyen.com.tourguide.Constants.JSON_DESCRIPTION_KEY;
@@ -32,10 +34,13 @@ import static datnguyen.com.tourguide.Constants.JSON_ITEM_TEL_KEY;
 import static datnguyen.com.tourguide.Constants.JSON_ITEM_WEBSITE_KEY;
 import static datnguyen.com.tourguide.Constants.JSON_TITLE_KEY;
 
-public class MainActivity extends FragmentActivity  {
+public class MainActivity extends FragmentActivity {
+
+	public final static String VIEW_TAG = "MainActivity";
 
 	private City currentCity = null;
 	private ViewPager viewPager = null;
+	private ImageView imvHeader = null;
 	private CustomPagerAdapter pagerAdapter = null;
 
 	static private Context sContext;
@@ -53,10 +58,44 @@ public class MainActivity extends FragmentActivity  {
 
 		// grab UI Controls
 		viewPager = (ViewPager) findViewById(R.id.viewPager);
+		imvHeader = (ImageView) findViewById(R.id.imvHeader);
+
 		pagerAdapter = new CustomPagerAdapter(getSupportFragmentManager());
 		viewPager.setAdapter(pagerAdapter);
 
-		PagerTabStrip pagerTabStrip = (PagerTabStrip) findViewById(R.id.pagerTabStrip);
+		ViewPager.OnPageChangeListener pageChangeListener = new ViewPager.OnPageChangeListener() {
+			@Override
+			public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+			}
+
+			@Override
+			public void onPageSelected(int position) {
+				// set image
+				Category category = currentCity.getCategories().get(position);
+				String imageName = category.getImageName();
+				Log.v(VIEW_TAG, "category: " + category.getTitle() + "desc: " + category.getDescription() + " imageName: " + imageName);
+
+				if (!TextUtils.isEmpty(imageName)) {
+					TransitionDrawable td = new TransitionDrawable(new Drawable[]{
+							imvHeader.getDrawable(),
+							getResources().getDrawable(getResources().getIdentifier(imageName, "drawable", getPackageName()))
+					});
+
+					td.setCrossFadeEnabled(true);
+					imvHeader.setImageDrawable(td);
+
+					td.startTransition(DURATION_FADE_TOP_IMAGE);
+				}
+			}
+
+			@Override
+			public void onPageScrollStateChanged(int state) {
+
+			}
+		};
+
+		viewPager.addOnPageChangeListener(pageChangeListener);
 
 		// load data
 		loadJSONData();
@@ -120,6 +159,7 @@ public class MainActivity extends FragmentActivity  {
 			// finally, set categories for this city
 			currentCity.setCategories(categories);
 
+			viewPager.setOffscreenPageLimit(categories.size());
 			// assign datasource and notify pager to update
 			pagerAdapter.setCategories(categories);
 			pagerAdapter.notifyDataSetChanged();
@@ -138,10 +178,12 @@ public class MainActivity extends FragmentActivity  {
 		String catId = jsonObject.optString(JSON_ID_KEY);
 		String catTitle = jsonObject.optString(JSON_TITLE_KEY);
 		String catDesc = jsonObject.optString(JSON_DESCRIPTION_KEY);
+		String catImage = jsonObject.optString(JSON_IMAGE_KEY);
 
 		category.setId(catId);
 		category.setTitle(catTitle);
 		category.setDescription(catDesc);
+		category.setImageName(catImage);
 
 		// an array to hold all items of array
 		ArrayList<CategoryItem> catItems = new ArrayList<>();
@@ -157,6 +199,7 @@ public class MainActivity extends FragmentActivity  {
 			}
 		}
 
+		Log.v(VIEW_TAG, "catitesms: " + catItems.size());
 		// assign all cat items to this category
 		category.setItems(catItems);
 		return category;
