@@ -4,8 +4,8 @@ import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.TransitionDrawable;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.util.Log;
 import android.widget.ImageView;
@@ -34,7 +34,7 @@ import static datnguyen.com.tourguide.Constants.JSON_ITEM_TEL_KEY;
 import static datnguyen.com.tourguide.Constants.JSON_ITEM_WEBSITE_KEY;
 import static datnguyen.com.tourguide.Constants.JSON_TITLE_KEY;
 
-public class MainActivity extends FragmentActivity {
+public class MainActivity extends AppCompatActivity {
 
 	public final static String VIEW_TAG = "MainActivity";
 
